@@ -1,5 +1,5 @@
 ### Date created
-Include the date you created this project and README file.
+January 2019
 
 ### Project Title
 Explore Bikesharing Data With Python
