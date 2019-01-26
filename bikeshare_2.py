@@ -100,7 +100,7 @@ def raw_data_display(df, increment=5):
             start_index += increment
             more = str(input("\nWould you like to see {} more rows of data?\nType 'yes' or anything else to quit.\n > ".format(increment)).lower())
 
-
+# loads data
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -134,7 +134,7 @@ def load_data(city, month, day):
 
     return df
 
-
+# gets time stats
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -189,7 +189,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# gets station stats
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -228,7 +228,7 @@ def station_stats(df):
     print('-'*40)
     print('-'*40)
 
-
+# gets trip duration stats
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -251,7 +251,7 @@ def trip_duration_stats(df):
     print('-'*40)
     print('-'*40)
 
-
+# gets user stats
 def user_stats(df, city):
     """Displays statistics on bikeshare users."""
 
@@ -296,7 +296,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
 
-        raw_data = str(input("\nWould you like to see the raw data?\nType 'yes' to proceed or anything else to skip.\n > ")).lower()
+        raw_data = str(input("\nWould you like to view the raw data?\nType 'yes' to proceed or anything else to skip.\n > ")).lower()
         if raw_data == "yes":
             raw_df = load_data(city, month, day)
             raw_data_display(raw_df)
