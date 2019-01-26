@@ -5,7 +5,7 @@ Include the date you created this project and README file.
 Explore Bikesharing Data With Python
 
 ### Description
-Describe what your project is about and what it does
+On execution, asks for user input and prints out data accordingly.
 
 ### Files used
 Include the files used
