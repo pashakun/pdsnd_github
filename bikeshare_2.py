@@ -296,7 +296,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
 
-        raw_data = str(input("\nWould you like to see the raw data?\nType 'yes' to proceed or anything else to skip.\n > ")).lower()
+        raw_data = str(input("\nWould you like to view the raw data?\nType 'yes' to proceed or anything else to skip.\n > ")).lower()
         if raw_data == "yes":
             raw_df = load_data(city, month, day)
             raw_data_display(raw_df)
