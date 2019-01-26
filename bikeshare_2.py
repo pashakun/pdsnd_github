@@ -81,6 +81,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
+# displays raw data
 def raw_data_display(df, increment=5):
     """
     Takes in a DataFrame and use input.
